@@ -7,7 +7,7 @@ use App\Http\Controllers\EmployeeController;
 use App\Http\Controllers\DepartmentController2;
 use App\Http\Controllers\LeaveController;
 use App\Http\Controllers\IndexController;
-
+use App\Models\Leave;
 
 use App\Http\Controllers\Auth\ForgotPasswordController;
 use App\Http\Controllers\Auth\ResetPasswordController;
@@ -25,24 +25,24 @@ Route::get('/', function () {
 })->name('register');
 
 
-Route::get('/login.html', function () {
+Route::get('/login', function () {
     return view('login');
-})->name('login.html');
+})->name('login');
 
 Route::post('/loginData', [AuthController::class, 'login']);
-Route::get('/logout.html', [AuthController::class, 'logout'])->name('logout.html');
+Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
 
 // Route::middleware('auth')->group(function () {
    
 //✅ Employee Routes
-    Route::get('/employees-dashboard.html', function () {
+    Route::get('/employees-dashboard', function () {
 
           $employeeId = session('id');
     $leaveList = Leave::where('employee_id', $employeeId)->get();
 
         return view('employees-dashboard',compact('leaveList'));
     })->name('employees-dashboard.html');
-    Route::get('/leave.html', [EmployeeController::class, 'showLeavePage'])->name('leave');
+    Route::get('/leave', [EmployeeController::class, 'showLeavePage'])->name('leave');
     Route::post('/leaveData', [EmployeeController::class, 'handleLeaveSubmission'])->name('leave.submit');
     
 
@@ -52,17 +52,17 @@ Route::get('/logout.html', [AuthController::class, 'logout'])->name('logout.html
 //     Route::get('/index.html', [IndexController::class, 'showIndex'])
 //     ->middleware('auth:register') // <-- Protect this page
 //     ->name('index.html');
-Route::get('/index.html', [IndexController::class, 'showIndex'])// <- Here you pass the required role
-    ->name('index.html');
+Route::get('/index', [IndexController::class, 'showIndex'])// <- Here you pass the required role
+    ->name('index');
 
 
 Route::post('/store', [RegisterController::class, 'store']);
     Route::post('/addDepartment', [DepartmentController2::class, 'store']);
     
-    Route::get('/add-employee.html', [EmployeeController::class, 'getDepartmentAll'])->name('add-employee.html');
+    Route::get('/add-employee', [EmployeeController::class, 'getDepartmentAll'])->name('add-employee');
     Route::post('/addEmployee', [EmployeeController::class, 'store'])->name('employee.store');
 
-    Route::get('/leave-details.html', [LeaveController::class, 'showAdminDashboard'])->name('leave-details.html');
+    Route::get('/leave-details', [LeaveController::class, 'showAdminDashboard'])->name('leave-details');
     Route::post('/view', [EmployeeController::class, 'view'])->name('view.leave');
     Route::post('/approve', [LeaveController::class, 'approveLeave'])->name('approve.leave');
     Route::post('/reject', [LeaveController::class, 'rejectLeave'])->name('reject.leave');
@@ -78,21 +78,16 @@ $pages = [
     'payroll-reports', 'payroll', 'profile-review', 'profile-settings',
     'reports', 'reviews', 'security-reports', 'settings-timeoff',
     'settings', 'super-admin', 'team-lead', 'team-member',
-    'time-off', 'work-from-home-reports','profile-reviews','employees-offices'
+    'time-off', 'work-from-home-reports','profile-reviews','employees-offices',
+    'department'
 ];
 
 foreach ($pages as $page) {
-    Route::get("/$page.html", function () use ($page) {
+    Route::get("/$page", function () use ($page) {
         return view($page);
-    })->name("$page.html");
+    })->name("$page");
 }
 Route::get('/forgot-password.html', function () {
     return view('email');
 })->name('forgot-password.html');
 
-
-// ✅ Company Page
-
-Route::get('/company.html', function () {
-    return view('department');
-})->name('company.html');

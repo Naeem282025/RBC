@@ -67,7 +67,7 @@
 					<div class="row align-items-center">
 						<div class="col-lg-3 col-md-3 col-sm-3 col-6">
 							<div class="logo my-3 my-sm-0">
-								<a href="index.html"> <img src="assets/img/RohanLogo.png"
+								<a href="index"> <img src="assets/img/RohanLogo.png"
 									alt="logo image" class="img-fluid" width="100">
 								</a>
 							</div>
@@ -98,7 +98,7 @@
 											<ul class="list-inline m-0">
 												<li class="list-inline-item item-animated"
 													data-toggle="tooltip" data-placement="top" title=""
-													data-original-title="Apply Leave"><a href="leave.html"
+													data-original-title="Apply Leave"><a href="leave"
 													class="font-23 menu-style text-white align-middle"> <span
 														class="lnr lnr-briefcase position-relative"></span>
 												</a></li>
@@ -120,14 +120,14 @@
 											<!-- Notifications -->
 											<div
 												class="dropdown-menu notification-dropdown-menu shadow-lg border-0 p-3 m-0 dropdown-menu-right">
-												<a class="dropdown-item p-2" href="employment.html"> <span
+												<a class="dropdown-item p-2" href="employment"> <span
 													class="media align-items-center"> <span
 														class="lnr lnr-user mr-3"></span> <span
 														class="media-body text-truncate"> <span
 															class="text-truncate">Profile</span>
 													</span>
 												</span>
-												<a class="dropdown-item p-2" href="login.html"> <span
+												<a class="dropdown-item p-2" href="login"> <span
 													class="media align-items-center"> <span
 														class="lnr lnr-power-switch mr-3"></span> <span
 														class="media-body text-truncate"> <span
@@ -177,77 +177,77 @@
 									</div>
 									<hr>
 									<div class="user-menu-items px-3 m-0">
-										<a class="px-0 pb-2 pt-0" href="index.html"> <span
+										<a class="px-0 pb-2 pt-0" href="index"> <span
 											class="media align-items-center"> <span
 												class="lnr lnr-home mr-3"></span> <span
 												class="media-body text-truncate text-left"> <span
 													class="text-truncate text-left">Dashboard</span>
 											</span>
 										</span>
-										</a> <a class="p-2" href="employees.html"> <span
+										</a> <a class="p-2" href="employees"> <span
 											class="media align-items-center"> <span
 												class="lnr lnr-users mr-3"></span> <span
 												class="media-body text-truncate text-left"> <span
 													class="text-truncate text-left">Employees</span>
 											</span>
 										</span>
-										</a> <a class="p-2" href="company.html"> <span
+										</a> <a class="p-2" href="department"> <span
 											class="media align-items-center"> <span
 												class="lnr lnr-apartment mr-3"></span> <span
 												class="media-body text-truncate text-left"> <span
-													class="text-truncate text-left">Company</span>
+													class="text-truncate text-left">Department</span>
 											</span>
 										</span>
-										</a> <a class="p-2" href="calendar.html"> <span
+										</a> <a class="p-2" href="calendar"> <span
 											class="media align-items-center"> <span
 												class="lnr lnr-calendar-full mr-3"></span> <span
 												class="media-body text-truncate text-left"> <span
 													class="text-truncate text-left">Calendar</span>
 											</span>
 										</span>
-										</a> <a class="p-2" href="leave.html"> <span
+										</a> <a class="p-2" href="leave"> <span
 											class="media align-items-center"> <span
 												class="lnr lnr-briefcase mr-3"></span> <span
 												class="media-body text-truncate text-left"> <span
 													class="text-truncate text-left">Leave</span>
 											</span>
 										</span>
-										</a> <a class="p-2" href="reviews.html"> <span
+										</a> <a class="p-2" href="reviews"> <span
 											class="media align-items-center"> <span
 												class="lnr lnr-star mr-3"></span> <span
 												class="media-body text-truncate text-left"> <span
 													class="text-truncate text-left">Reviews</span>
 											</span>
 										</span>
-										</a> <a class="p-2" href="reports.html"> <span
+										</a> <a class="p-2" href="reports"> <span
 											class="media align-items-center"> <span
 												class="lnr lnr-rocket mr-3"></span> <span
 												class="media-body text-truncate text-left"> <span
 													class="text-truncate text-left">Reports</span>
 											</span>
 										</span>
-										</a> <a class="p-2" href="manage.html"> <span
+										</a> <a class="p-2" href="manage"> <span
 											class="media align-items-center"> <span
 												class="lnr lnr-sync mr-3"></span> <span
 												class="media-body text-truncate text-left"> <span
 													class="text-truncate text-left">Manage</span>
 											</span>
 										</span>
-										</a> <a class="p-2" href="settings.html"> <span
+										</a> <a class="p-2" href="settings"> <span
 											class="media align-items-center"> <span
 												class="lnr lnr-cog mr-3"></span> <span
 												class="media-body text-truncate text-left"> <span
 													class="text-truncate text-left">Settings</span>
 											</span>
 										</span>
-										</a> <a class="p-2" href="employment.html"> <span
+										</a> <a class="p-2" href="employment"> <span
 											class="media align-items-center"> <span
 												class="lnr lnr-user mr-3"></span> <span
 												class="media-body text-truncate text-left"> <span
 													class="text-truncate text-left">Profile</span>
 											</span>
 										</span>
-										</a> <a class="p-2" href="login.html"> <span
+										</a> <a class="p-2" href="login"> <span
 											class="media align-items-center"> <span
 												class="lnr lnr-power-switch mr-3"></span> <span
 												class="media-body text-truncate text-left"> <span
@@ -275,40 +275,40 @@
 								class="header-menu-list d-flex bg-white rt_nav_header horizontal-layout nav-bottom">
 								<div class="append mr-auto my-0 my-md-0 mr-auto">
 									<ul class="list-group list-group-horizontal-md mr-auto">
-										<li class="mr-1"><a href="index.html"
+										<li class="mr-1"><a href="index"
 											class="text-dark btn-ctm-space"><span
 												class="lnr lnr-home pr-0 pr-lg-2"></span><span
 												class="d-none d-lg-inline">Dashboard</span></a></li>
 										<li class="active mr-1"><a
-											class="text-white btn-ctm-space" href="employees.html"><span
+											class="text-white btn-ctm-space" href="employees"><span
 												class="lnr lnr-users pr-0 pr-lg-2"></span><span
 												class="d-none d-lg-inline">Employees</span></a></li>
 										<li class="mr-1"><a class="text-dark btn-ctm-space"
-											href="company.html"><span
+											href="department"><span
 												class="lnr lnr-apartment pr-0 pr-lg-2"></span><span
 												class="d-none d-lg-inline">Department</span></a></li>
 										<li class="mr-1"><a class="text-dark btn-ctm-space"
-											href="calendar.html"><span
+											href="calendar"><span
 												class="lnr lnr-calendar-full pr-0 pr-lg-2"></span><span
 												class="d-none d-lg-inline">Calendar</span></a></li>
 										<li class="mr-1"><a class="text-dark btn-ctm-space"
-											href="leave-details.html"><span
+											href="leave-details"><span
 												class="lnr lnr-briefcase pr-0 pr-lg-2"></span><span
 												class="d-none d-lg-inline">Leave</span></a></li>
 										<li class="mr-1"><a class="text-dark btn-ctm-space"
-											href="reviews.html"><span
+											href="reviews"><span
 												class="lnr lnr-star pr-0 pr-lg-2"></span><span
 												class="d-none d-lg-inline">Reviews</span></a></li>
 										<li class="mr-1"><a class="text-dark btn-ctm-space"
-											href="reports.html"><span
+											href="reports"><span
 												class="lnr lnr-rocket pr-0 pr-lg-2"></span><span
 												class="d-none d-lg-inline">Reports</span></a></li>
 										<li class="mr-1"><a class="text-dark btn-ctm-space"
-											href="manage.html"><span
+											href="manage"><span
 												class="lnr lnr-sync pr-0 pr-lg-2"></span><span
 												class="d-none d-lg-inline">Manage</span></a></li>
 										<li class="mr-1"><a class="text-dark btn-ctm-space"
-											href="settings.html"><span
+											href="settings"><span
 												class="lnr lnr-cog pr-0 pr-lg-2"></span><span
 												class="d-none d-lg-inline">Settings</span></a></li>
 									</ul>

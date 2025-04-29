@@ -64,7 +64,7 @@ class AuthController extends Controller
             return redirect()->intended($this->redirectPath($guard));
         } else {
             Auth::guard($guard)->logout(); // logout if not authorized
-            return redirect()->route('login.html');
+            return redirect()->route('login');
         }
     }
 
@@ -103,10 +103,10 @@ class AuthController extends Controller
     protected function redirectPath($guard)
     {
         if ($guard === 'register') {
-            return route('index.html'); // Admin dashboard
+            return route('index'); // Admin dashboard
         }
 
-        return route('employees-dashboard.html'); // Employee dashboard
+        return route('employees-dashboard'); // Employee dashboard
     }
 
     // Send failed login response

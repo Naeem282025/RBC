@@ -38,7 +38,7 @@
 				<div class="container">
 					<div class="loginbox shadow-sm">
 						<div class="login-left">
-							<img class="img-fluid" src="assets/img/logo.png" alt="Logo">
+							<img class="img-fluid" src="assets/img/RohanLogo.png" alt="Logo">
 						</div>
 						<div class="login-right">
 							<div class="login-right-wrap">
@@ -46,7 +46,7 @@
 								<p class="account-subtitle">Enter your email to get a reset link</p>
 								
 								<!-- Form -->
-								<form action="login.html">
+								<form action="login">
 									<div class="form-group">
 										<input class="form-control" type="text" placeholder="Email">
 									</div>
@@ -56,7 +56,7 @@
 								</form>
 								<!-- /Form -->
 								
-								<div class="text-center dont-have">Remember your password? <a href="login.html">Login</a></div>
+								<div class="text-center dont-have">Remember your password? <a href="login">Login</a></div>
 							</div>
 						</div>
 					</div>

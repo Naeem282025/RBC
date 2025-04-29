@@ -79,7 +79,7 @@
                             </form>
                             <!-- /Form -->
 
-                            <div class="text-center forgotpass"><a href="forgot-password.html">Forgot Password?</a>
+                            <div class="text-center forgotpass"><a href="forgot-password">Forgot Password?</a>
                             </div>
                             <div class="login-or">
                                 <span class="or-line"></span>
