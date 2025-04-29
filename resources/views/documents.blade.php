@@ -92,7 +92,7 @@
 											<div class="user-info align-right dropdown d-inline-block header-dropdown">
 												<a href="javascript:void(0)" data-toggle="dropdown" class=" menu-style dropdown-toggle">
 													<div class="user-avatar d-inline-block">
-														<img src="assets/img/profiles/img-6.jpg" alt="user avatar" class="rounded-circle img-fluid" width="55">
+														<img src="{{ asset('assets/img/profiles/' . session('image')) }}" alt="user avatar" class="rounded-circle img-fluid" width="55">
 													</div>
 												</a>
 												
@@ -106,14 +106,7 @@
 															</span>
 														</span>
 													</a>
-													<a class="dropdown-item p-2" href="profile-settings.html">
-														<span class="media align-items-center">
-															<span class="lnr lnr-cog mr-3"></span>
-															<span class="media-body text-truncate">
-																<span class="text-truncate">Settings</span>
-															</span>
-														</span>
-													</a>
+													
 													<a class="dropdown-item p-2" href="login.html">
 														<span class="media align-items-center">
 															<span class="lnr lnr-power-switch mr-3"></span>
@@ -312,16 +305,17 @@
 								<div class="user-card shadow-sm bg-white p-4 text-center ctm-border-radius card">
 									<div class="user-info">
 										<div class="user-avatar mb-4">
-											<img src="assets/img/profiles/img-6.jpg" alt="User Avatar" class="img-fluid rounded-circle" width="100">
+											<img src="{{ asset('assets/img/profiles/' . session('image')) }}"alt="User Avatar" class="img-fluid rounded-circle" width="100">
 										</div>
 										<div class="user-details">
-											<h4><b>Welcome Maria</b></h4>
-											<span class="ctm-text-sm">mariacotton@example.com</span>
+											<h4><b>{{ session('Guest') }} {{ session('firstname') }}</b></h4>
+											<span class="ctm-text-sm">{{ session('user_email') }}</span>
 										</div>
 									</div>
 								</div>
 								<div class="quicklink-sidebar-menu ctm-border-radius shadow-sm bg-white p-4 mb-4 card">
 									<ul class="list-group">
+
 										<li class="list-group-item text-center button-6"><a href="details.html" class="text-dark">Detail</a></li>
 										<li class="list-group-item text-center button-5 active"><a href="documents.html" class="text-white">Document</a></li>
 										<li class="list-group-item text-center button-6"><a href="payroll.html" class="text-dark">Payroll</a></li>

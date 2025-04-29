@@ -57,7 +57,7 @@
 							<div class="col-lg-3 col-md-3 col-sm-3 col-6">
 								<div class="logo my-3 my-sm-0">
 									<a href="index.html">
-									<img src="assets/img/RohanLogo.png" alt="logo image" class="img-fluid" width="100">
+									<img src="assets/img/logo.png" alt="logo image" class="img-fluid" width="100">
 									</a>
 								</div>
 							</div>
@@ -107,7 +107,14 @@
 															</span>
 														</span>
 													</a>
-													
+													<a class="dropdown-item p-2" href="profile-settings.html">
+														<span class="media align-items-center">
+															<span class="lnr lnr-cog mr-3"></span>
+															<span class="media-body text-truncate">
+																<span class="text-truncate">Settings</span>
+															</span>
+														</span>
+													</a>
 													<a class="dropdown-item p-2" href="login.html">
 														<span class="media align-items-center">
 															<span class="lnr lnr-power-switch mr-3"></span>

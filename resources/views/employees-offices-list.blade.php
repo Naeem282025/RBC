@@ -108,14 +108,7 @@
 															</span>
 														</span>
 													</a>
-													<a class="dropdown-item p-2" href="profile-settings.html">
-														<span class="media align-items-center">
-															<span class="lnr lnr-cog mr-3"></span>
-															<span class="media-body text-truncate">
-																<span class="text-truncate">Settings</span>
-															</span>
-														</span>
-													</a>
+													
 													<a class="dropdown-item p-2" href="login.html">
 														<span class="media align-items-center">
 															<span class="lnr lnr-power-switch mr-3"></span>

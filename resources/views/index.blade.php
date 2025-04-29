@@ -115,13 +115,7 @@
                                                                 class="text-truncate">Profile</span>
                                                         </span>
                                                     </span>
-                                                </a> <a class="dropdown-item p-2" href="profile-settings.html">
-                                                    <span class="media align-items-center"> <span
-                                                            class="lnr lnr-cog mr-3"></span> <span
-                                                            class="media-body text-truncate"> <span
-                                                                class="text-truncate">Settings</span>
-                                                        </span>
-                                                    </span>
+                                              
                                                 </a> <a class="dropdown-item p-2" href="logout.html"> <span
                                                         class="media align-items-center"> <span
                                                             class="lnr lnr-power-switch mr-3"></span> <span
@@ -183,11 +177,11 @@
                                                         class="text-truncate text-left">Employees</span>
                                                 </span>
                                             </span>
-                                        </a> <a class="p-2" href="company.html"> <span
+                                        </a> <a class="p-2" href="department.html"> <span
                                                 class="media align-items-center"> <span
                                                     class="lnr lnr-apartment mr-3"></span> <span
                                                     class="media-body text-truncate text-left"> <span
-                                                        class="text-truncate text-left">Company</span>
+                                                        class="text-truncate text-left">Department</span>
                                                 </span>
                                             </span>
                                         </a> <a class="p-2" href="calendar.html"> <span

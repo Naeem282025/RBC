@@ -108,14 +108,6 @@
 															</span>
 														</span>
 													</a>
-													<a class="dropdown-item p-2" href="profile-settings.html">
-														<span class="media align-items-center">
-															<span class="lnr lnr-cog mr-3"></span>
-															<span class="media-body text-truncate">
-																<span class="text-truncate">Settings</span>
-															</span>
-														</span>
-													</a>
 													<a class="dropdown-item p-2" href="login.html">
 														<span class="media align-items-center">
 															<span class="lnr lnr-power-switch mr-3"></span>
@@ -329,7 +321,6 @@
 										<li class="list-group-item text-center button-6"><a href="payroll.html" class="text-dark">Payroll</a></li>
 										<li class="list-group-item text-center button-6"><a href="time-off.html" class="text-dark">Timeoff</a></li>
 										<li class="list-group-item text-center button-6"><a href="profile-reviews.html" class="text-dark">Reviews</a></li>
-										<li class="list-group-item text-center button-6"><a class="text-dark" href="profile-settings.html">Settings</a></li>
 									</ul>
 								</div>
 							</aside>

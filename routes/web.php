@@ -19,17 +19,6 @@ Route::get('reset-password/{token}', [ResetPasswordController::class, 'showReset
 Route::post('reset-password', [ResetPasswordController::class, 'reset'])->name('password.update');
 
 
-
-
-
-
-
-
-
-
-
-
-
 // ✅ Public Routes
 Route::get('/', function () {
     return view('register');
@@ -47,7 +36,11 @@ Route::get('/logout.html', [AuthController::class, 'logout'])->name('logout.html
    
 //✅ Employee Routes
     Route::get('/employees-dashboard.html', function () {
-        return view('employees-dashboard');
+
+          $employeeId = session('id');
+    $leaveList = Leave::where('employee_id', $employeeId)->get();
+
+        return view('employees-dashboard',compact('leaveList'));
     })->name('employees-dashboard.html');
     Route::get('/leave.html', [EmployeeController::class, 'showLeavePage'])->name('leave');
     Route::post('/leaveData', [EmployeeController::class, 'handleLeaveSubmission'])->name('leave.submit');
@@ -85,7 +78,7 @@ $pages = [
     'payroll-reports', 'payroll', 'profile-review', 'profile-settings',
     'reports', 'reviews', 'security-reports', 'settings-timeoff',
     'settings', 'super-admin', 'team-lead', 'team-member',
-    'time-off', 'work-from-home-reports','profile-reviews'
+    'time-off', 'work-from-home-reports','profile-reviews','employees-offices'
 ];
 
 foreach ($pages as $page) {
@@ -99,7 +92,7 @@ Route::get('/forgot-password.html', function () {
 
 
 // ✅ Company Page
+
 Route::get('/company.html', function () {
     return view('department');
 })->name('company.html');
-// });

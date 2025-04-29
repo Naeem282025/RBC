@@ -52,7 +52,7 @@ class AuthController extends Controller
             'salary_amount' => $user->salary_amount,
             'salary_frequency' => $user->salary_frequency,
             'department_id' => $user->department_id,
-            'department_name' => $user->department ? $user->department->department_name : 'Not Assigned',
+            'department_name' => $user->department ? $user->department->name : 'Not Assigned',
         ]);
         
 

@@ -108,14 +108,7 @@
 															</span>
 														</span>
 													</a>
-													<a class="dropdown-item p-2" href="profile-settings.html">
-														<span class="media align-items-center">
-															<span class="lnr lnr-cog mr-3"></span>
-															<span class="media-body text-truncate">
-																<span class="text-truncate">Settings</span>
-															</span>
-														</span>
-													</a>
+													
 													<a class="dropdown-item p-2" href="login.html">
 														<span class="media align-items-center">
 															<span class="lnr lnr-power-switch mr-3"></span>
@@ -324,6 +317,7 @@
 								</div>
 								<div class="quicklink-sidebar-menu ctm-border-radius shadow-sm bg-white p-4 mb-4 card">
 									<ul class="list-group">
+										
 										<li class="list-group-item text-center active button-5"><a href="details.html" class="text-dark">Detail</a></li>
 										<li class="list-group-item text-center button-6"><a href="documents.html" class="text-dark">Document</a></li>
 										<li class="list-group-item text-center button-6"><a href="payroll.html" class="text-dark">Payroll</a></li>
