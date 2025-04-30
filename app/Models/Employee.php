@@ -13,33 +13,32 @@ class Employee extends Authenticatable
     protected $table = 'employees';
 
     protected $fillable = [
+        'employee_code',
         'first_name',
         'last_name',
+        'father_name',
+        'mobile',
         'email',
         'password',
-        'estart_date',
-        'sstart_date',
+        'adhar_no',
+        'pan_no',
+        'address',
+        'UAN',
+        'esic_detail',
+        'ifsc_detail',
+        'account_no',
+        'dob',
+        'date_of_joining',
         'job_title',
-        'employment_type',
-        'team',
         'line_manager',
         'office_name',
-        'salary_amount',
-        'salary_frequency',
         'image_photo_url',
-        'department_id'
+        'department_id',
     ];
 
     protected $hidden = [
         'password',
     ];
-
-    protected $casts = [
-        'salary_amount' => 'float',
-        'estart_date' => 'date',
-        'sstart_date' => 'date',
-    ];
-
     public function department()
     {
         return $this->belongsTo(Department::class, 'department_id');

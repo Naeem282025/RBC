@@ -34,7 +34,7 @@ class RegisterController extends Controller  // <-- Controller is now properly r
     ]);
 
     if ($validator->fails()) {
-        return redirect()->route('/')
+        return redirect()->route('register')
             ->withErrors($validator)
             ->withInput();  // Retains old input except for password fields
     }
@@ -63,7 +63,7 @@ class RegisterController extends Controller  // <-- Controller is now properly r
 
 
 
-    return redirect()->route('login.html')->with('success', 'Registration successful. Please login.');
+    return redirect()->route('login')->with('success', 'Registration successful. Please login.');
 }
 
     /**

@@ -268,7 +268,7 @@
                             <div class="header-menu-list d-flex bg-white rt_nav_header horizontal-layout nav-bottom">
                                 <div class="append mr-auto my-0 my-md-0 mr-auto">
                                     <ul class="list-group list-group-horizontal-md mr-auto">
-                                        <li class="active mr-1"><a href="index"
+                                        <li class="active mr-1"><a href="employees-dashboard"
                                                 class="text-white btn-ctm-space"><span
                                                     class="lnr lnr-home pr-0 pr-lg-2"></span><span
                                                     class="d-none d-lg-inline">Dashboard</span></a></li>
@@ -284,7 +284,7 @@
                                                 href="calendar"><span
                                                     class="lnr lnr-calendar-full pr-0 pr-lg-2"></span><span
                                                     class="d-none d-lg-inline">Calendar</span></a></li>
-                                        <li class="mr-1"><a class="text-dark btn-ctm-space" href="leave.html"><span
+                                        <li class="mr-1"><a class="text-dark btn-ctm-space" href="leave"><span
                                                     class="lnr lnr-briefcase pr-0 pr-lg-2"></span><span
                                                     class="d-none d-lg-inline">Leave</span></a></li>
                                         <li class="mr-1"><a class="text-dark btn-ctm-space"
@@ -351,13 +351,13 @@
 								</div>
 								<div class="quicklink-sidebar-menu ctm-border-radius shadow-sm bg-white p-4 mb-4 card">
 									<ul class="list-group">
-										<li class="list-group-item text-center button-6"><a href="employment.html" class="text-dark">Employement</a></li>
-										<li class="list-group-item text-center button-6"><a href="details.html" class="text-dark">Detail</a></li>
-										<li class="list-group-item text-center button-6"><a href="documents.html" class="text-dark">Document</a></li>
-										<li class="list-group-item text-center button-6"><a href="payroll.html" class="text-dark">Payroll</a></li>
-										<li class="list-group-item text-center button-6"><a href="time-off.html" class="text-dark">Timeoff</a></li>
-										<li class="list-group-item text-center button-5 active"><a href="profile-reviews.html" class="text-white">Reviews</a></li>
-										<li class="list-group-item text-center button-6"><a class="text-dark" href="profile-settings.html">Settings</a></li>
+										
+										<li class="list-group-item text-center button-6"><a href="details" class="text-dark">Detail</a></li>
+										<li class="list-group-item text-center button-6"><a href="documents" class="text-dark">Document</a></li>
+										<li class="list-group-item text-center button-6"><a href="payroll" class="text-dark">Payroll</a></li>
+										<li class="list-group-item text-center button-6"><a href="time-off" class="text-dark">Timeoff</a></li>
+										<li class="list-group-item text-center button-5 active"><a href="profile-reviews" class="text-white">Reviews</a></li>
+										
 									</ul>
 								</div>
 							</aside>

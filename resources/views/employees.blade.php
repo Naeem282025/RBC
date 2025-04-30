@@ -268,11 +268,11 @@
 								<div class="header-menu-list d-flex bg-white rt_nav_header horizontal-layout nav-bottom">
 									<div class="append mr-auto my-0 my-md-0 mr-auto">
 										<ul class="list-group list-group-horizontal-md mr-auto">
-											<li class="active mr-1"><a href="index"
-													class="text-white btn-ctm-space"><span
+											<li class="mr-1"><a href="index"
+													class="text-dark btn-ctm-space"><span
 														class="lnr lnr-home pr-0 pr-lg-2"></span><span
 														class="d-none d-lg-inline">Dashboard</span></a></li>
-											<li class="mr-1"><a class="text-dark btn-ctm-space"
+											<li class="mr-1 active"><a class="text-white btn-ctm-space"
 													href="employees"><span
 														class="lnr lnr-users pr-0 pr-lg-2"></span><span
 														class="d-none d-lg-inline">Employees</span></a></li>
@@ -329,7 +329,7 @@
 												<div class="custom-search input-group">
 													<div class="custom-breadcrumb">
 														<ol class="breadcrumb no-bg-color d-inline-block p-0 m-0 mb-2">
-															<li class="breadcrumb-item d-inline-block"><a href="index.html" class="text-dark">Home</a></li>
+															<li class="breadcrumb-item d-inline-block"><a href="index" class="text-dark">Home</a></li>
 															<li class="breadcrumb-item d-inline-block active">Employees</li>
 														</ol>
 														<h4 class="text-dark">Employees</h4>
@@ -343,9 +343,9 @@
 								<div class="quicklink-sidebar-menu ctm-border-radius shadow-sm bg-white card">
 									<div class="card-body">
 										<ul class="list-group">
-											<li class="list-group-item text-center active button-5"><a href="employees.html" class="text-white">All</a></li>
-											<li class="list-group-item text-center button-6"><a class="text-dark" href="employees-team.html">Teams</a></li>
-											<li class="list-group-item text-center button-6"><a class="text-dark" href="employees-offices.html">Offices</a></li>
+											<li class="list-group-item text-center active button-5"><a href="employees" class="text-white">All</a></li>
+											<li class="list-group-item text-center button-6"><a class="text-dark" href="employees-team">Teams</a></li>
+											<li class="list-group-item text-center button-6"><a class="text-dark" href="employees-offices">Offices</a></li>
 										</ul>
 									</div>
 								</div>
@@ -364,7 +364,7 @@
 											<a class="nav-link border-0 font-23 list-view" href="employees-list.html"><i class="fa fa-list-ul" aria-hidden="true"></i></a>
 										</li>
 										<li class="nav-item pl-3">
-											<a href="add-employee.html" class="btn btn-theme button-1 text-white ctm-border-radius p-2 add-person ctm-btn-padding"><i class="fa fa-plus"></i> Add Person</a>
+											<a href="add-employee" class="btn btn-theme button-1 text-white ctm-border-radius p-2 add-person ctm-btn-padding"><i class="fa fa-plus"></i> Add Person</a>
 										</li>
 									</ul>
 								</div>

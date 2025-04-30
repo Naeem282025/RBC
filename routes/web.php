@@ -41,7 +41,7 @@ Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
     $leaveList = Leave::where('employee_id', $employeeId)->get();
 
         return view('employees-dashboard',compact('leaveList'));
-    })->name('employees-dashboard.html');
+    })->name('employees-dashboard');
     Route::get('/leave', [EmployeeController::class, 'showLeavePage'])->name('leave');
     Route::post('/leaveData', [EmployeeController::class, 'handleLeaveSubmission'])->name('leave.submit');
     

@@ -108,7 +108,7 @@
                                             <!-- Notifications -->
                                             <div
                                                 class="dropdown-menu notification-dropdown-menu shadow-lg border-0 p-3 m-0 dropdown-menu-right">
-                                                <a class="dropdown-item p-2" href="employment">
+                                                <a class="dropdown-item p-2" href="details">
                                                     <span class="media align-items-center">
                                                         <span class="lnr lnr-user mr-3"></span>
                                                         <span class="media-body text-truncate">
@@ -286,7 +286,7 @@
                                                 href="calendar"><span
                                                     class="lnr lnr-calendar-full pr-0 pr-lg-2"></span><span
                                                     class="d-none d-lg-inline">Calendar</span></a></li>
-                                        <li class="mr-1"><a class="text-dark btn-ctm-space" href="leave.html"><span
+                                        <li class="mr-1"><a class="text-dark btn-ctm-space" href="leave"><span
                                                     class="lnr lnr-briefcase pr-0 pr-lg-2"></span><span
                                                     class="d-none d-lg-inline">Leave</span></a></li>
                                         <li class="mr-1"><a class="text-dark btn-ctm-space"
@@ -371,34 +371,37 @@
                                 </div>
                             </div>
                             <div class="card shadow-sm">
-                                <div class="card-body">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <p>
-                                                <span class="text-primary">Register Number : </span>FT0070
-                                            </p>
-                                            <p>
-                                                <span class="text-primary">Incorporation Date : </span>07
-                                                May 2000
-                                            </p>
-                                            <p>
-                                                <span class="text-primary">VAT Number : </span>VT0070
-                                            </p>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <p>
-                                                <span class="text-primary">Address:</span><br> Santiago
-                                                de Surco <br> Av.Caminos del Inca 1325<br> United
-                                                States
-                                            </p>
-
+                                <div class="card-header">
+                                    <h4 class="card-title mb-0 d-inline-block">Focus Technologies</h4>
+                                </div>
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <p>
+                                                    <span class="text-primary">Register Number : </span>FT0070
+                                                </p>
+                                                <p>
+                                                    <span class="text-primary">Incorporation Date : </span>07
+                                                    May 2000
+                                                </p>
+                                                <p>
+                                                    <span class="text-primary">VAT Number : </span>VT0070
+                                                </p>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p>
+                                                    <span class="text-primary">Address:</span><br> Santiago
+                                                    de Surco <br> Av.Caminos del Inca 1325<br> United
+                                                    States
+                                                </p>
+    
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </aside>
-
-                    </div>
+                            </aside>
+    
+                        </div>
 
                     <div class="col-xl-9 col-lg-8  col-md-12">
                         <div class="row">
@@ -466,7 +469,7 @@
                                 <!-- Recent Activities -->
                                 <div class="card recent-acti flex-fill shadow-sm">
                                     <div class="card-header">
-                                        <h4 class="card-title mb-0 d-inline-block">Recent Activities</h4>
+                                        <h4 class="card-title mb-0 d-inline-block">Teams</h4>
                                         <a href="javascript:void(0)"
                                             class="d-inline-block float-right text-primary"><i
                                                 class="lnr lnr-sync"></i></a>
@@ -505,7 +508,7 @@
                                 <div class="card flex-fill today-list shadow-sm">
                                     <div class="card-header">
                                         <h4 class="card-title mb-0 d-inline-block">Your Leaves</h4>
-                                        <a href="leave.html" class="d-inline-block float-right text-primary"><i
+                                        <a href="leave" class="d-inline-block float-right text-primary"><i
                                                 class="fa fa-suitcase"></i></a>
                                     </div>
                                     <div class="card-body recent-activ">

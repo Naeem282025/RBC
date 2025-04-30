@@ -109,7 +109,7 @@
                                             <!-- Notifications -->
                                             <div
                                                 class="dropdown-menu notification-dropdown-menu shadow-lg border-0 p-3 m-0 dropdown-menu-right">
-                                                <a class="dropdown-item p-2" href="employment">
+                                                <a class="dropdown-item p-2" href="details">
                                                     <span class="media align-items-center">
                                                         <span class="lnr lnr-user mr-3"></span>
                                                         <span class="media-body text-truncate">
@@ -163,7 +163,7 @@
                                     </div>
                                     <hr>
                                     <div class="user-menu-items px-3 m-0">
-                                        <a class="px-0 pb-2 pt-0" href="index">
+                                        <a class="px-0 pb-2 pt-0" href="employees-dashboard">
                                             <span class="media align-items-center">
                                                 <span class="lnr lnr-home mr-3"></span>
                                                 <span class="media-body text-truncate text-left">
@@ -271,7 +271,7 @@
                             <div class="header-menu-list d-flex bg-white rt_nav_header horizontal-layout nav-bottom">
                                 <div class="append mr-auto my-0 my-md-0 mr-auto">
                                     <ul class="list-group list-group-horizontal-md mr-auto">
-                                        <li class="active mr-1"><a href="index"
+                                        <li class="active mr-1"><a href="employees-dashboard"
                                                 class="text-white btn-ctm-space"><span
                                                     class="lnr lnr-home pr-0 pr-lg-2"></span><span
                                                     class="d-none d-lg-inline">Dashboard</span></a></li>
@@ -287,7 +287,7 @@
                                                 href="calendar"><span
                                                     class="lnr lnr-calendar-full pr-0 pr-lg-2"></span><span
                                                     class="d-none d-lg-inline">Calendar</span></a></li>
-                                        <li class="mr-1"><a class="text-dark btn-ctm-space" href="leave.html"><span
+                                        <li class="mr-1"><a class="text-dark btn-ctm-space" href="leave"><span
                                                     class="lnr lnr-briefcase pr-0 pr-lg-2"></span><span
                                                     class="d-none d-lg-inline">Leave</span></a></li>
                                         <li class="mr-1"><a class="text-dark btn-ctm-space"
@@ -332,7 +332,7 @@
 												<div class="custom-search input-group">
 													<div class="custom-breadcrumb">
 														<ol class="breadcrumb no-bg-color d-inline-block p-0 m-0 mb-2">
-															<li class="breadcrumb-item d-inline-block"><a href="index.html" class="text-dark">Home</a></li>
+															<li class="breadcrumb-item d-inline-block"><a href="index" class="text-dark">Home</a></li>
 															<li class="breadcrumb-item d-inline-block active">Profile</li>
 														</ol>
 														<h4 class="text-dark">Profile</h4>
@@ -356,11 +356,11 @@
 								</div>
 								<div class="quicklink-sidebar-menu ctm-border-radius shadow-sm bg-white p-4 mb-4 card">
 									<ul class="list-group">
-										<li class="list-group-item text-center active button-5"><a href="details.html" class="text-white">Detail</a></li>
-										<li class="list-group-item text-center button-6"><a href="documents.html" class="text-dark">Document</a></li>
-										<li class="list-group-item text-center button-6"><a href="payroll.html" class="text-dark">Payroll</a></li>
-										<li class="list-group-item text-center button-6"><a href="time-off.html" class="text-dark">Timeoff</a></li>
-										<li class="list-group-item text-center button-6"><a href="profile-reviews.html" class="text-dark">Reviews</a></li>
+										<li class="list-group-item text-center active button-5"><a href="details" class="text-white">Detail</a></li>
+										<li class="list-group-item text-center button-6"><a href="documents" class="text-dark">Document</a></li>
+										<li class="list-group-item text-center button-6"><a href="payroll" class="text-dark">Payroll</a></li>
+										<li class="list-group-item text-center button-6"><a href="time-off" class="text-dark">Timeoff</a></li>
+										<li class="list-group-item text-center button-6"><a href="profile-reviews" class="text-dark">Reviews</a></li>
 									</ul>
 								</div>
 							</aside>
@@ -378,9 +378,15 @@
 											<p class="card-text mb-3"><span class="text-primary">Preferred Name :</span>{{ session('firstname') }}</p>
 											<p class="card-text mb-3"><span class="text-primary">First Name :</span>{{ session('firstname') }}</p>
 											<p class="card-text mb-3"><span class="text-primary">Last Name : </span>{{ session('lastname') }}</p>
-											<p class="card-text mb-3"><span class="text-primary">email : </span>{{ session('user_email') }}</p>
-											<p class="card-text mb-3"><span class="text-primary">Joining Date :</span>{{ session('estart_date') }}</p>
-											<p class="card-text mb-3"><span class="text-primary">Department : </span>{{ session('department_name') }}</p>
+											<p class="card-text mb-3"><span class="text-primary">Email: </span>{{ session('user_email') }}</p>
+											<p class="card-text mb-3"><span class="text-primary">Father Name: </span>{{ session('father_name') }}</p>
+											<p class="card-text mb-3"><span class="text-primary">D.O.B: </span>{{ session('dob') }}</p>
+											<p class="card-text mb-3"><span class="text-primary">Mobile :</span>{{ session('mobile') }}</p>
+											<p class="card-text mb-3"><span class="text-primary">Account No : </span>{{ session('account_no') }}</p>
+											<p class="card-text mb-3"><span class="text-primary">IFSC Code : </span>{{ session('ifsc_detail') }}</p>
+											<p class="card-text mb-3"><span class="text-primary">Adhar No : </span>{{ session('adhar_no') }}</p>
+											<p class="card-text mb-3"><span class="text-primary">PAN no : </span>{{ session('pan_no') }}</p>
+											<p class="card-text mb-3"><span class="text-primary">Address : </span>{{ session('address') }}</p>
 											<a href="javascript:void(0)" class="btn btn-theme ctm-border-radius text-white btn-sm" data-toggle="modal" data-target="#add_basicInformation"><i class="fa fa-plus" aria-hidden="true"></i></a>
 											<a href="javascript:void(0)" class="btn btn-theme ctm-border-radius text-white btn-sm" data-toggle="modal" data-target="#edit_basicInformation"><i class="fa fa-pencil" aria-hidden="true"></i></a>
 										</div>
@@ -389,13 +395,14 @@
 								<div class="col-xl-4 col-lg-6 col-md-6 d-flex">
 									<div class="card flex-fill  ctm-border-radius shadow-sm">
 										<div class="card-header">
-											<h4 class="card-title mb-0">Teams & Office</h4>
+											<h4 class="card-title mb-0">Employee Details</h4>
 										</div>
 										<div class="card-body text-center">
-											<p class="card-text mb-3"><span class="text-primary">Team : </span>{{ session('team') }}</p>
-											<p class="card-text mb-3"><span class="text-primary">Line Manager : </span>{{ session('line_manager') }}</p>
-											<p class="card-text mb-3"><span class="text-primary">Office Name : </span>{{ session('office_name') }}</p>
+											<p class="card-text mb-3"><span class="text-primary">Employee Code : </span>{{ session('employee_code') }}</p>
+											<p class="card-text mb-3"><span class="text-primary">Date of Joining : </span>{{ session('date_of_joining') }}</p>
 											<p class="card-text mb-3"><span class="text-primary">Job Title : </span>{{ session('job_title') }}</p>
+											<p class="card-text mb-3"><span class="text-primary">UAN : </span>{{ session('UAN') }}</p>
+											<p class="card-text mb-3"><span class="text-primary">ESIC Detail : </span>{{ session('esic_detail') }}</p>
 											<a href="javascript:void(0)" class="btn btn-theme ctm-border-radius text-white btn-sm" data-toggle="modal" data-target="#add_Contact"><i class="fa fa-plus" aria-hidden="true"></i></a>
 											<a href="javascript:void(0)" class="btn btn-theme ctm-border-radius text-white btn-sm" data-toggle="modal" data-target="#edit_Contact"><i class="fa fa-pencil" aria-hidden="true"></i></a>
 										</div>
@@ -406,12 +413,14 @@
 										<div class="col-xl-12 col-lg-6 col-md-6 d-flex">
 											<div class="card ctm-border-radius shadow-sm flex-fill">
 												<div class="card-header">
-													<h4 class="card-title mb-0">Salary Details</h4>
+													<h4 class="card-title mb-0">Team &Offices</h4>
 												</div>
 												<div class="card-body text-center">
-													<p class="card-text mb-3"><span class="text-primary">Amount : </span>{{ session('salary_amount') }}</p>
-													<p class="card-text mb-3"><span class="text-primary">Salary Frequency : </span>{{ session('salary_frequency') }}</p>
-													<a href="javascript:void(0)" class="btn btn-theme ctm-border-radius text-white btn-sm" data-toggle="modal" data-target="#edit_Dates"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+											<p class="card-text mb-3"><span class="text-primary">Team : </span>{{ session('department_name') }}</p>
+											<p class="card-text mb-3"><span class="text-primary">Line Manager : </span>{{ session('line_manager') }}</p>
+											<p class="card-text mb-3"><span class="text-primary">Office Name : </span>{{ session('office_name') }}</p>
+											<a href="javascript:void(0)" class="btn btn-theme ctm-border-radius text-white btn-sm" data-toggle="modal" data-target="#add_Contact"><i class="fa fa-plus" aria-hidden="true"></i></a>
+											<a href="javascript:void(0)" class="btn btn-theme ctm-border-radius text-white btn-sm" data-toggle="modal" data-target="#edit_Contact"><i class="fa fa-pencil" aria-hidden="true"></i></a>
 												</div>
 											</div>
 										</div>

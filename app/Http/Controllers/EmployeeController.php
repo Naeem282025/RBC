@@ -31,26 +31,33 @@ class EmployeeController extends Controller
     public function store(Request $request)
     {
         $validator = Validator::make($request->all(), [
+            'employee_code' => 'required|string|max:255',
             'first_name' => 'required|string|max:255',
             'last_name' => 'required|string|max:255',
+            'father_name' => 'required|string|max:255',
+            'mobile' => 'required|string|max:20',
             'email' => 'required|string|email|max:255|unique:employees',
             'password' => 'required|string|min:8',
             'estart_date' => 'date',
-            'sstart_date' => 'date',
+           'adhar_no' => 'nullable|string|max:20',
+            'pan_no' => 'nullable|string|max:20',
+            'address' => 'required|string|max:1000',
+            'UAN' => 'nullable|string|max:20',
+            'esic_detail' => 'nullable|string|max:255',
+            'ifsc_detail' => 'nullable|string|max:20',
+            'account_no' => 'required|string|max:30',
+            'dob' => 'required|date',
+            'date_of_joining' => 'required|date',
             'job_title' => 'required|string|max:255',
-            'employment_type' => 'required|string|max:255',
-            'team' => 'string|max:255',
-            'line_manager' => 'string|max:255',
             'office_name' => 'string|max:255',
-            'salary_amount' => 'required|numeric',
-            'salary_frequency' => 'required|string|max:255',
             'department_id' => 'required|integer|exists:departments,id',
             'image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);
+       
         
     
         if ($validator->fails()) {
-            return redirect()->route('add-employee.html')
+            return redirect()->route('add-employee')
                 ->withErrors($validator)
                 ->withInput();  // Retains old input except for password fields
         }
@@ -69,22 +76,30 @@ if ($request->hasFile('image')) {
 // Now $imageName is always defined, whether an image is uploaded or not
 
 $employee = Employee::create([
+    'employee_code' => $request->employee_code,
     'first_name' => $request->first_name,
     'last_name' => $request->last_name,
+    'father_name' => $request->father_name,
+    'mobile' => $request->mobile,
     'email' => $request->email,
     'password' => Hash::make($request->password),
-    'estart_date' => $request->estart_date,
-    'sstart_date' => $request->sstart_date,
+    'adhar_no' => $request->adhar_no,
+    'pan_no' => $request->pan_no,
+    'address' => $request->address,
+    'UAN' => $request->UAN,
+    'esic_detail' => $request->esic_detail,
+    'ifsc_detail' => $request->ifsc_detail,
+    'account_no' => $request->account_no,
+    'dob' => $request->dob,
+    'date_of_joining' => $request->date_of_joining,
     'job_title' => $request->job_title,
-    'employment_type' => $request->employment_type,
-    'team' => $request->team,
     'line_manager' => $request->line_manager,
     'office_name' => $request->office_name,
-    'salary_amount' => $request->salary_amount,
-    'salary_frequency' => $request->salary_frequency,
     'department_id' => $request->department_id,
     'image_photo_url' => $imageName,
 ]);
+
+
 
         // Assign user role if it exists
         $userRole = Role::find(502);
@@ -92,7 +107,7 @@ $employee = Employee::create([
             $employee->roles()->attach($userRole->id);
         }
     
-        return redirect()->route('index.html');
+        return redirect()->route('index');
     }
     public function showLeavePage()
 {

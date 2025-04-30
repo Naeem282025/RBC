@@ -36,25 +36,31 @@ class AuthController extends Controller
         Auth::guard($guard)->login($user);
         session([
             'Guest' => 'Welcome:',
+            'employee_code'     => $user->employee_code,
             'id' => $user->id,
             'firstname' => $user->first_name,
             'lastname' => $user->last_name,
+            'father_name'       => $user->father_name,
+            'mobile'            => $user->mobile,
             'user_name' => $user->name, // Make sure 'name' exists in your model
             'user_email' => $user->email,
             'image' => $user->image_photo_url,
-            'estart_date' => $user->estart_date,
-            'sstart_date' => $user->sstart_date,
-            'job_title' => $user->job_title,
-            'employment_type' => $user->employment_type,
-            'team' => $user->team,
-            'line_manager' => $user->line_manager,
-            'office_name' => $user->office_name,
-            'salary_amount' => $user->salary_amount,
-            'salary_frequency' => $user->salary_frequency,
+            'adhar_no'          => $user->adhar_no,
+            'pan_no'            => $user->pan_no,
+            'address'           => $user->address,
+            'UAN'               => $user->UAN,
+            'esic_detail'       => $user->esic_detail,
+            'ifsc_detail'       => $user->ifsc_detail,
+            'account_no'        => $user->account_no,
+            'dob'               => $user->dob,
+            'date_of_joining'   => $user->date_of_joining,
+            'job_title'         => $user->job_title,
+            'line_manager'      => $user->line_manager,
+            'office_name'       => $user->office_name,
             'department_id' => $user->department_id,
-            'department_name' => $user->department ? $user->department->name : 'Not Assigned',
+            'department_name' => $user->department ? $user->department->department_name : 'Not Assigned',
         ]);
-        
+       
 
         // Get the user's roles
         $roleNames = $user->roles->pluck('name');
@@ -129,6 +135,6 @@ class AuthController extends Controller
          $request->session()->invalidate();
          $request->session()->regenerateToken();
  
-         return redirect('/login.html')->with('success', 'Logout successful');
+         return redirect('/login')->with('success', 'Logout successful');
      }
  }

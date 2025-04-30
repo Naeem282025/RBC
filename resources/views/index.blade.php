@@ -325,7 +325,7 @@
                                                 <div class="custom-breadcrumb">
                                                     <ol class="breadcrumb no-bg-color d-inline-block p-0 m-0 mb-2">
                                                         <li class="breadcrumb-item d-inline-block"><a
-                                                                href="index.html" class="text-dark">Home</a></li>
+                                                                href="index" class="text-dark">Home</a></li>
                                                         <li class="breadcrumb-item d-inline-block active">Dashboard
                                                         </li>
                                                     </ol>
@@ -360,7 +360,7 @@
                                             <li class="list-group-item text-center active button-5"><a
                                                     href="index.html" class="text-white">Admin Dashboard</a></li>
                                             <li class="list-group-item text-center button-6"><a class="text-dark"
-                                                    href="employees-dashboard.html">Employees
+                                                    href="employees-dashboard">Employees
                                                     Dashboard</a></li>
                                         </ul>
                                     </div>

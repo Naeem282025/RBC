@@ -52,7 +52,7 @@ class LeaveController extends Controller
         // Send Email Notification
         $this->emailService->sendEmail($leave->employee->email, "Leave Approved", "Your leave request has been approved.");
 
-        return redirect('/leave-details.html')->with('success', 'Leave Approved Successfully');
+        return redirect('/leave-details')->with('success', 'Leave Approved Successfully');
     }
 
     // Reject Leave
@@ -68,7 +68,7 @@ class LeaveController extends Controller
         // Send Email Notification
         $this->emailService->sendEmail($leave->employee->email, "Leave Rejected", "Your leave request has been rejected.");
 
-        return redirect('/leave-details.html')->with('error', 'Leave Rejected');
+        return redirect('/leave-details')->with('error', 'Leave Rejected');
     }
 }
 

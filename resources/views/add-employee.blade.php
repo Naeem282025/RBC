@@ -397,10 +397,34 @@
 												<span class="text-danger">{{ $errors->first('last_name') }}</span>
 											@endif
 										</div>
-										<div class="col-12 form-group">
+										<div class="col form-group">
 											<input type="email" class="form-control" placeholder="Email" name="email" value="{{ old('email') }}" required>
 											@if ($errors->has('email'))
 												<span class="text-danger">{{ $errors->first('email') }}</span>
+											@endif
+										</div>
+										<div class="col form-group">
+											<input type="text" class="form-control" placeholder="Father Name" name="father_name" required>
+											@if ($errors->has('father_name'))
+												<span class="text-danger">{{ $errors->first('father_name') }}</span>
+											@endif
+										</div>
+										<div class="col-12 form-group">
+											<input type="file" class="form-control"  name="image" accept="image/*">
+											@if ($errors->has('image'))
+												<span class="text-danger">{{ $errors->first('image') }}</span>
+											@endif
+										</div>
+										<div class="col form-group">
+											<input type="date" class="form-control" placeholder="Date of Birth" name="dob" required>
+											@if ($errors->has('dob'))
+												<span class="text-danger">{{ $errors->first('dob') }}</span>
+											@endif
+										</div>
+										<div class="col form-group">
+											<input type="text" class="form-control" placeholder="Mobile" name="mobile" value="{{ old('mobile') }}" required>
+											@if ($errors->has('mobile'))
+												<span class="text-danger">{{ $errors->first('mobile') }}</span>
 											@endif
 										</div>
 										<div class="col form-group">
@@ -409,11 +433,34 @@
 												<span class="text-danger">{{ $errors->first('password') }}</span>
 											@endif
 										</div>
+										<div class="col-12 form-group">
+											<input type="text" class="form-control" placeholder="Account Number" name="account_no" required>
+											@if ($errors->has('account_no'))
+												<span class="text-danger">{{ $errors->first('account_no') }}</span>
+											@endif
+										</div>
 										<div class="col form-group">
-											<label for="file">Upload File:</label>
-											<input type="file" class="form-control" name="image" accept="image/*">
-											@if ($errors->has('image'))
-												<span class="text-danger">{{ $errors->first('image') }}</span>
+											<input type="text" class="form-control" placeholder="IFSC Code" name="ifsc_detail" required>
+											@if ($errors->has('adhar_no'))
+												<span class="text-danger">{{ $errors->first('adhar_no') }}</span>
+											@endif
+										</div>
+										<div class="col form-group">
+											<input type="text" class="form-control" placeholder="Adhar Number" name="adhar_no" required>
+											@if ($errors->has('adhar_no'))
+												<span class="text-danger">{{ $errors->first('adhar_no') }}</span>
+											@endif
+										</div>
+										<div class="col form-group">
+											<input type="text" class="form-control" placeholder="PAN No" name="pan_no" required>
+											@if ($errors->has('pan_no'))
+												<span class="text-danger">{{ $errors->first('pan_no') }}</span>
+											@endif
+										</div>
+										<div class="col-12 form-group">
+											<textarea class="form-control" name="address" placeholder="Address" rows="5">{{ old('address') }}</textarea>
+											@if ($errors->has('address'))
+												<span class="text-danger">{{ $errors->first('address') }}</span>
 											@endif
 										</div>
 									</div>
@@ -421,6 +468,46 @@
 									<div class="card shadow-sm ctm-border-radius">
 										<div class="card-header">
 											<h4>Employee Details</h4>
+										</div>
+										<div class="card-body">
+											<div class="row">
+												<div class="col-12 form-group">
+													<input type="text" class="form-control" placeholder="Employee Code" name="employee_code" value="{{ old('employee_code') }}">
+													@if ($errors->has('employee_code'))
+														<span class="text-danger">{{ $errors->first('employee_code') }}</span>
+													@endif
+												</div>
+												<div class="col-md-12 form-group">
+													<input type="date" class="form-control datepicker" name="date_of_joining" placeholder="Date Of Joining" value="{{ old('date_of_joining') }}" onfocus="(this.type='date')" onblur="(this.type='text')">
+													@if ($errors->has('date_of_joining'))
+														<span class="text-danger">{{ $errors->first('date_of_joining') }}</span>
+													@endif
+												</div>                
+												<div class="col-12 form-group">
+													<input type="text" class="form-control" placeholder="Job Title" name="job_title" value="{{ old('job_title') }}">
+													@if ($errors->has('job_title'))
+														<span class="text-danger">{{ $errors->first('job_title') }}</span>
+													@endif
+												</div>
+												<div class="col-12 form-group">
+													<input type="text" class="form-control" placeholder="UAN" name="UAN" value="{{ old('UAN') }}">
+													@if ($errors->has('UAN'))
+														<span class="text-danger">{{ $errors->first('UAN') }}</span>
+													@endif
+												</div>
+												<div class="col-12 form-group">
+													<input type="text" class="form-control" placeholder="ESIC Detail" name="esic_detail" value="{{ old('esic_detail') }}">
+													@if ($errors->has('esic_detail'))
+														<span class="text-danger">{{ $errors->first('esic_detail') }}</span>
+													@endif
+												</div>
+											</div>
+										</div>
+									</div>
+								
+									<div class="card shadow-sm ctm-border-radius">
+										<div class="card-header">
+											<h4>Team & Office</h4>
 										</div>
 										<div class="card-body">
 											<div class="row">
@@ -436,60 +523,33 @@
 													@endif
 												</div>
 												<div class="col-md-12 form-group">
-													<input type="text" class="form-control datepicker" name="estart_date" placeholder="Start Date" value="{{ old('estart_date') }}" onfocus="(this.type='date')" onblur="(this.type='text')">
-													@if ($errors->has('estart_date'))
-														<span class="text-danger">{{ $errors->first('estart_date') }}</span>
-													@endif
-												</div>                
-												<div class="col-12 form-group">
-													<input type="text" class="form-control" placeholder="Job Title" name="job_title" value="{{ old('job_title') }}">
-													@if ($errors->has('job_title'))
-														<span class="text-danger">{{ $errors->first('job_title') }}</span>
-													@endif
-												</div>
-												<div class="col-12 form-group">
-													<p class="mb-2">Employment Type</p>
-													<input type="radio" name="employment_type" value="Permanent" {{ old('employment_type') == 'Permanent' ? 'checked' : '' }}> Permanent
-													<input type="radio" name="employment_type" value="Freelancer" {{ old('employment_type') == 'Freelancer' ? 'checked' : '' }}> Freelancer
-													@if ($errors->has('employment_type'))
-														<span class="text-danger">{{ $errors->first('employment_type') }}</span>
-													@endif
-												</div>
-											</div>
-										</div>
-									</div>
-								
-									<div class="card shadow-sm ctm-border-radius">
-										<div class="card-header">
-											<h4>Team & Office</h4>
-										</div>
-										<div class="card-body">
-											<div class="row">
-												<div class="col-md-12 form-group">
-													<select class="form-control" name="team">
-														<option selected value="">Select Team</option>
-														<option value="PHP" {{ old('team') == 'PHP' ? 'selected' : '' }}>PHP</option>
-														<option value="Android" {{ old('team') == 'Android' ? 'selected' : '' }}>Android</option>
-														<option value="Testing" {{ old('team') == 'Testing' ? 'selected' : '' }}>Testing</option>
-														<option value="Designing" {{ old('team') == 'Designing' ? 'selected' : '' }}>Designing</option>
-														<option value="IOS" {{ old('team') == 'IOS' ? 'selected' : '' }}>IOS</option>
-														<option value="Business" {{ old('team') == 'Business' ? 'selected' : '' }}>Business</option>
-													</select>
-													@if ($errors->has('team'))
-														<span class="text-danger">{{ $errors->first('team') }}</span>
-													@endif
-												</div>
-												<div class="col-md-12 form-group">
 													<select class="form-control" name="line_manager">
 														<option selected value="">Select Line Manager</option>
-														<option value="Robert Wilson" {{ old('line_manager') == 'Robert Wilson' ? 'selected' : '' }}>Robert Wilson</option>
-														<option value="Maria Cotton" {{ old('line_manager') == 'Maria Cotton' ? 'selected' : '' }}>Maria Cotton</option>
-														<option value="Danny Ward" {{ old('line_manager') == 'Danny Ward' ? 'selected' : '' }}>Danny Ward</option>
-														<option value="Linda Craver" {{ old('line_manager') == 'Linda Craver' ? 'selected' : '' }}>Linda Craver</option>
-														<option value="Jenni Sims" {{ old('line_manager') == 'Jenni Sims' ? 'selected' : '' }}>Jenni Sims</option>
-														<option value="John Gibbs" {{ old('line_manager') == 'John Gibbs' ? 'selected' : '' }}>John Gibbs</option>
-														<option value="Stacey Linville" {{ old('line_manager') == 'Stacey Linville' ? 'selected' : '' }}>Stacey Linville</option>
+														<option value="RAVINDRA SHAH" {{ old('line_manager') == 'RAVINDRA SHAH' ? 'selected' : '' }}>RAVINDRA SHAH</option>
+														<option value="SURAJ KUMAR" {{ old('line_manager') == 'SURAJ KUMAR' ? 'selected' : '' }}>SURAJ KUMAR</option>
+														<option value="VANDANA BHARGAVA" {{ old('line_manager') == 'VANDANA BHARGAVA' ? 'selected' : '' }}>VANDANA BHARGAVA</option>
+														<option value="AYAZ KHAN" {{ old('line_manager') == 'AYAZ KHAN' ? 'selected' : '' }}>AYAZ KHAN</option>
+														<option value="AKASH" {{ old('line_manager') == 'AKASH' ? 'selected' : '' }}>AKASH</option>
+														<option value="JYOTI GULERIA" {{ old('line_manager') == 'JYOTI GULERIA' ? 'selected' : '' }}>JYOTI GULERIA</option>
+														<option value="GULZAR KHAN" {{ old('line_manager') == 'GULZAR KHAN' ? 'selected' : '' }}>GULZAR KHAN</option>
+														<option value="NIMESH KUMAR MUDGAL" {{ old('line_manager') == 'NIMESH KUMAR MUDGAL' ? 'selected' : '' }}>NIMESH KUMAR MUDGAL</option>
+														<option value="ASHISH SUNILRAO GALGATE" {{ old('line_manager') == 'ASHISH SUNILRAO GALGATE' ? 'selected' : '' }}>ASHISH SUNILRAO GALGATE</option>
+														<option value="AJAY CHOWDHURY" {{ old('line_manager') == 'AJAY CHOWDHURY' ? 'selected' : '' }}>AJAY CHOWDHURY</option>
+														<option value="ABHISHEK SINGH" {{ old('line_manager') == 'ABHISHEK SINGH' ? 'selected' : '' }}>ABHISHEK SINGH</option>
+														<option value="MANISH GARCHA" {{ old('line_manager') == 'MANISH GARCHA' ? 'selected' : '' }}>MANISH GARCHA</option>
+														<option value="GANESH DUTT SINHA" {{ old('line_manager') == 'GANESH DUTT SINHA' ? 'selected' : '' }}>GANESH DUTT SINHA</option>
+														<option value="SANDEEP AGARWAL" {{ old('line_manager') == 'SANDEEP AGARWAL' ? 'selected' : '' }}>SANDEEP AGARWAL</option>
+														<option value="DEEPAK KUMAR" {{ old('line_manager') == 'DEEPAK KUMAR' ? 'selected' : '' }}>DEEPAK KUMAR</option>
+														<option value="ANOOP KUMAR SHUKLA" {{ old('line_manager') == 'ANOOP KUMAR SHUKLA' ? 'selected' : '' }}>ANOOP KUMAR SHUKLA</option>
+														<option value="MILAN GUPTA" {{ old('line_manager') == 'MILAN GUPTA' ? 'selected' : '' }}>MILAN GUPTA</option>
+														<option value="RAGHAV KRISHNA GUPTA" {{ old('line_manager') == 'RAGHAV KRISHNA GUPTA' ? 'selected' : '' }}>RAGHAV KRISHNA GUPTA</option>
+														<option value="THIRUMURUGAN P." {{ old('line_manager') == 'THIRUMURUGAN P.' ? 'selected' : '' }}>THIRUMURUGAN P.</option>
+														<option value="J.NARAYAN SWAMY" {{ old('line_manager') == 'J.NARAYAN SWAMY' ? 'selected' : '' }}>J.NARAYAN SWAMY</option>
+														<option value="AKHIL V R" {{ old('line_manager') == 'AKHIL V R' ? 'selected' : '' }}>AKHIL V R</option>
+														<option value="K. SUNIL KUMAR GOUD" {{ old('line_manager') == 'K. SUNIL KUMAR GOUD' ? 'selected' : '' }}>K. SUNIL KUMAR GOUD</option>
+														<option value="ANTONY LOUIS" {{ old('line_manager') == 'ANTONY LOUIS' ? 'selected' : '' }}>ANTONY LOUIS</option>
 													</select>
+													
 													@if ($errors->has('line_manager'))
 														<span class="text-danger">{{ $errors->first('line_manager') }}</span>
 													@endif
@@ -497,7 +557,7 @@
 												<div class="col-12 form-group">
 													<select class="form-control" name="office_name">
 														<option selected value="">Select Office</option>
-														<option value="Focus Technology" {{ old('office_name') == 'Focus Technology' ? 'selected' : '' }}>Focus Technology</option>
+														<option value="Rohan Book Company PVT L.T" {{ old('office_name') == 'Rohan Book Company PVT L.T' ? 'selected' : '' }}>Focus Technology</option>
 													</select>
 													@if ($errors->has('office_name'))
 														<span class="text-danger">{{ $errors->first('office_name') }}</span>
@@ -506,39 +566,6 @@
 											</div>
 										</div>
 									</div>
-								
-									<div class="card shadow-sm ctm-border-radius">
-										<div class="card-header">
-											<h4>Salary Details</h4>
-										</div>
-										<div class="card-body">
-											<div class="row">
-												<div class="col-md-12 form-group">
-													<input type="text" class="form-control" name="salary_amount" placeholder="Amount" value="{{ old('salary_amount') }}">
-													@if ($errors->has('salary_amount'))
-														<span class="text-danger">{{ $errors->first('salary_amount') }}</span>
-													@endif
-												</div>
-												<div class="col-12 form-group">
-													<select class="form-control" name="salary_frequency">
-														<option selected value="">Salary Frequency</option>
-														<option value="Annually" {{ old('salary_frequency') == 'Annually' ? 'selected' : '' }}>Annually</option>
-														<option value="Monthly" {{ old('salary_frequency') == 'Monthly' ? 'selected' : '' }}>Monthly</option>
-													</select>
-													@if ($errors->has('salary_frequency'))
-														<span class="text-danger">{{ $errors->first('salary_frequency') }}</span>
-													@endif
-												</div>
-												<div class="col-md-12 form-group">
-													<input type="text" class="form-control" name="sstart_date" placeholder="Start Date" value="{{ old('sstart_date') }}" onfocus="(this.type='date')" onblur="(this.type='text')">
-													@if ($errors->has('sstart_date'))
-														<span class="text-danger">{{ $errors->first('sstart_date') }}</span>
-													@endif
-												</div>
-											</div>
-										</div>
-									</div>
-								
 									<div class="row">
 										<div class="col-12">
 											<div class="submit-section text-center btn-add">

@@ -45,7 +45,7 @@ class DepartmentController2 extends Controller
 
     // If validation fails, return with errors
     if ($validator->fails()) {
-        return redirect()->route('company.html')
+        return redirect()->route('department')
             ->withErrors($validator)
             ->withInput();
     }
@@ -53,7 +53,7 @@ class DepartmentController2 extends Controller
     // Store data in the database
     $department = Department::create($request->all());
 
-    return redirect()->route('index.html');
+    return redirect()->route('index');
 }
     /**
      * Display the specified department.

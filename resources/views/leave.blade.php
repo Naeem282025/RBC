@@ -114,7 +114,7 @@
                                             <!-- Notifications -->
                                             <div
                                                 class="dropdown-menu notification-dropdown-menu shadow-lg border-0 p-3 m-0 dropdown-menu-right">
-                                                <a class="dropdown-item p-2" href="employment">
+                                                <a class="dropdown-item p-2" href="details">
                                                     <span class="media align-items-center">
                                                         <span class="lnr lnr-user mr-3"></span>
                                                         <span class="media-body text-truncate">
@@ -276,8 +276,8 @@
                             <div class="header-menu-list d-flex bg-white rt_nav_header horizontal-layout nav-bottom">
                                 <div class="append mr-auto my-0 my-md-0 mr-auto">
                                     <ul class="list-group list-group-horizontal-md mr-auto">
-                                        <li class="active mr-1"><a href="index"
-                                                class="text-white btn-ctm-space"><span
+                                        <li class="mr-1"><a href="employees-dashboard"
+                                                class="text-dark btn-ctm-space"><span
                                                     class="lnr lnr-home pr-0 pr-lg-2"></span><span
                                                     class="d-none d-lg-inline">Dashboard</span></a></li>
                                         <li class="mr-1"><a class="text-dark btn-ctm-space"
@@ -287,12 +287,12 @@
                                         <li class="mr-1"><a class="text-dark btn-ctm-space"
                                                 href="department"><span
                                                     class="lnr lnr-apartment pr-0 pr-lg-2"></span><span
-                                                    class="d-none d-lg-inline">Company</span></a></li>
+                                                    class="d-none d-lg-inline">Department</span></a></li>
                                         <li class="mr-1"><a class="text-dark btn-ctm-space"
                                                 href="calendar"><span
                                                     class="lnr lnr-calendar-full pr-0 pr-lg-2"></span><span
                                                     class="d-none d-lg-inline">Calendar</span></a></li>
-                                        <li class="mr-1"><a class="text-dark btn-ctm-space" href="leave"><span
+                                        <li class="active mr-1"><a class="text-white btn-ctm-space" href="leave"><span
                                                     class="lnr lnr-briefcase pr-0 pr-lg-2"></span><span
                                                     class="d-none d-lg-inline">Leave</span></a></li>
                                         <li class="mr-1"><a class="text-dark btn-ctm-space"
@@ -338,7 +338,7 @@
                                                 <div class="custom-breadcrumb">
                                                     <ol class="breadcrumb no-bg-color d-inline-block p-0 m-0 mb-2">
                                                         <li class="breadcrumb-item d-inline-block"><a
-                                                                href="index.html" class="text-dark">Home</a></li>
+                                                                href="index" class="text-dark">Home</a></li>
                                                         <li class="breadcrumb-item d-inline-block active">Leave</li>
                                                     </ol>
                                                     <h4 class="text-dark">Leave</h4>
